@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'component'
+import { Component } from 'component/src/index'
 import 'component/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Component>UI-Type: Component</Component>
 }
 
 export default App

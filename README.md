@@ -1,4 +1,4 @@
-# component
+# Modular-UI-React Components
 
 > Base component that implements basic lifecycles and properties
 
@@ -7,24 +7,34 @@
 ## Install
 
 ```bash
-npm install --save component
+npm install --save @modular-ui-react/components
+```
+
+or
+
+```bash
+yarn add @modular-ui-react/components
 ```
 
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
+import { Component } from '@modular-ui-react/component'
 
-import MyComponent from 'component'
-import 'component/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+function MyComponent({ children, className, ...props }) {
+  return (
+    <Component className={[className, 'MyComponent'].join(' ')} {...props}>
+      {children}
+    </Component>
+  )
 }
 ```
 
+## Contributing
+
+Pull Requests are Welcome.
+
 ## License
 
-MIT © [A-G-D](https://github.com/A-G-D)
+This repository is released under [MIT License](LICENSE).

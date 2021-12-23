@@ -1,0 +1,15 @@
+.ContextMenu {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+
+  .MenuItem {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0px 12px;
+  }
+}
