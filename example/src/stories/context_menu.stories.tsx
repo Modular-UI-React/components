@@ -2,10 +2,11 @@ import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { ContextMenu, MenuItem } from '../../../src/context-menu/context_menu'
 
-export default {
+const story: ComponentMeta<typeof ContextMenu> = {
   title: 'ContextMenu',
   component: ContextMenu
-} as ComponentMeta<typeof ContextMenu>
+}
+export default story
 
 type component = ComponentStory<typeof ContextMenu>
 
