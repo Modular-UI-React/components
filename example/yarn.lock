@@ -1744,18 +1744,29 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.22.tgz#219dfd89ae5b97a8801f015323ffa4b62f45718b"
   integrity sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==
 
-"@modular-ui-react/hooks@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@modular-ui-react/hooks/-/hooks-0.1.0.tgz#6f5868a6a8270864db4640b98cc2ab44b33dc6e3"
-  integrity sha512-3VUZbSvLT0QLLezC5Pcn0gLqXl7gm3Bl1T8yxM16OimxC5UJzkU5Q7wdFjO47f/E2BtgHFPXBFXkv4DqoFNoPQ==
+"@modular-ui-react/components@link:..":
+  version "0.0.0"
+  uid ""
+
+"@modular-ui-react/hooks@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@modular-ui-react/hooks/-/hooks-0.2.2.tgz#076aaaeca9357e57f9a10c3b58961ae23d75396c"
+  integrity sha512-/YEY/0vs7Hro288yeHJEaVl4f//ZFJhIDRHaBVc3/4H4wEaRBn1VSjXxrAU3hRCgb97ZrbJjXEGVrWQgK3fz1A==
   dependencies:
     "@modular-ui-react/utils" "^0.1.0"
-    "@react-custom-hooks/use-lifecycle" "^0.2.3"
+
+"@modular-ui-react/hooks@link:../node_modules/@modular-ui-react/hooks":
+  version "0.0.0"
+  uid ""
 
 "@modular-ui-react/utils@^0.1.0", "@modular-ui-react/utils@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@modular-ui-react/utils/-/utils-0.1.1.tgz#f601da73d57bb851ebd1419bdf74104cfb51d574"
   integrity sha512-5L8zNtAUq74yMQmuadFnHssbXRpt3T2hx6eGE2EYYIg8/cClfrVAzHTCVzKmerl8oNfvvm7I9MSdlRvDvEGjtA==
+
+"@modular-ui-react/utils@link:../node_modules/@modular-ui-react/utils":
+  version "0.0.0"
+  uid ""
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -1834,15 +1845,20 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@pointerjs/pointer@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@pointerjs/pointer/-/pointer-0.1.0.tgz#02e61ea5d8bc08bdd23d873d1c63cb1e8a5ef98f"
+  integrity sha512-boLCTfrG7Sgz8sr8PL9lzxdCkoInZLCJ47V+jw32wXzMePx2yH4eEdcBQJG/MA3fUyyXt74OiuvoHLDMLlRUug==
+
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.6.0":
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.0.tgz#6734f8ebc106a0860dff7f92bf90df193f0935d7"
   integrity sha512-zrsUxjLOKAzdewIDRWy9nsV1GQsKBCWaGwsZQlCgr6/q+vjyZhFgqedLfFBuI9anTPEUT4APq9Mu0SZBTzIcGQ==
 
-"@react-custom-hooks/use-lifecycle@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@react-custom-hooks/use-lifecycle/-/use-lifecycle-0.2.3.tgz#70359c6454f1005091265b01a8f4129035d53942"
-  integrity sha512-YjEioVYMwB/8pgiwG8rlYtqlNhy0Pe3S5iABkdEblzYnp0B35tazDwa2pW/NzesbLhSVE/1KKE51ZgKmJZHx+w==
+"@popperjs/core@^2.9.0":
+  version "2.11.2"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.2.tgz#830beaec4b4091a9e9398ac50f865ddea52186b9"
+  integrity sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==
 
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.3"
@@ -2840,6 +2856,13 @@
 "@testing-library/user-event@link:../node_modules/@testing-library/user-event":
   version "0.0.0"
   uid ""
+
+"@tippyjs/react@^4.2.6":
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/@tippyjs/react/-/react-4.2.6.tgz#971677a599bf663f20bb1c60a62b9555b749cc71"
+  integrity sha512-91RicDR+H7oDSyPycI13q3b7o4O60wa2oRbjlz2fyRLmHImc4vyDwuUP8NtZaN0VARJY5hybvDYrFzhY9+Lbyw==
+  dependencies:
+    tippy.js "^6.3.1"
 
 "@types/aria-query@^4.2.0":
   version "4.2.2"
@@ -12245,6 +12268,11 @@ react-helmet-async@^1.0.7:
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
 
+react-icons@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.3.1.tgz#2fa92aebbbc71f43d2db2ed1aed07361124e91ca"
+  integrity sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==
+
 react-inspector@^5.1.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-inspector/-/react-inspector-5.1.1.tgz#58476c78fde05d5055646ed8ec02030af42953c8"
@@ -13955,6 +13983,13 @@ timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
+
+tippy.js@^6.3.1:
+  version "6.3.7"
+  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-6.3.7.tgz#8ccfb651d642010ed9a32ff29b0e9e19c5b8c61c"
+  integrity sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==
+  dependencies:
+    "@popperjs/core" "^2.9.0"
 
 tmp@^0.0.33:
   version "0.0.33"

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { Component } from '../../../src/component/component'
+import { Component } from '@modular-ui-react/components'
 
 const story: ComponentMeta<typeof Component> = {
   title: 'Component',

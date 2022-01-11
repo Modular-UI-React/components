@@ -1439,17 +1439,22 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@modular-ui-react/hooks@^0.1.0":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@modular-ui-react/hooks/-/hooks-0.1.1.tgz#cfc49ad59f736f661ea850115dcac32d1ad69470"
-  integrity sha512-JVUqhQeUlFI3BtN/zWD2ooxojfVIzmFKCAL0v5gWUGHC5fU8gyERKEjgp7U8ooP/GQvtMJLy/k0mGtvMvDcjkA==
+"@modular-ui-react/hooks@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@modular-ui-react/hooks/-/hooks-0.2.2.tgz#076aaaeca9357e57f9a10c3b58961ae23d75396c"
+  integrity sha512-/YEY/0vs7Hro288yeHJEaVl4f//ZFJhIDRHaBVc3/4H4wEaRBn1VSjXxrAU3hRCgb97ZrbJjXEGVrWQgK3fz1A==
   dependencies:
     "@modular-ui-react/utils" "^0.1.0"
 
-"@modular-ui-react/utils@^0.1.0", "@modular-ui-react/utils@^0.1.1":
+"@modular-ui-react/utils@^0.1.0":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@modular-ui-react/utils/-/utils-0.1.1.tgz#f601da73d57bb851ebd1419bdf74104cfb51d574"
   integrity sha512-5L8zNtAUq74yMQmuadFnHssbXRpt3T2hx6eGE2EYYIg8/cClfrVAzHTCVzKmerl8oNfvvm7I9MSdlRvDvEGjtA==
+
+"@modular-ui-react/utils@^0.1.1":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@modular-ui-react/utils/-/utils-0.1.2.tgz#9bed98dfcff48b11a168acb69e156717e0bd7a32"
+  integrity sha512-oP/kcqfAhc0UGX8CNb9f2JASZf/zLzTHhbEcLFGuB0HMsErr489cOVrjt0+7s2YAkH2qsOLm5vSHeGrjAe5+0A==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -1463,6 +1468,11 @@
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
+
+"@pointerjs/pointer@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@pointerjs/pointer/-/pointer-0.1.0.tgz#02e61ea5d8bc08bdd23d873d1c63cb1e8a5ef98f"
+  integrity sha512-boLCTfrG7Sgz8sr8PL9lzxdCkoInZLCJ47V+jw32wXzMePx2yH4eEdcBQJG/MA3fUyyXt74OiuvoHLDMLlRUug==
 
 "@popperjs/core@^2.9.0":
   version "2.11.0"

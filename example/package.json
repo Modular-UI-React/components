@@ -12,6 +12,9 @@
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@modular-ui-react/components": "link:../",
+    "@modular-ui-react/hooks": "link:../node_modules/@modular-ui-react/hooks",
+    "@modular-ui-react/utils": "link:../node_modules/@modular-ui-react/utils",
     "@testing-library/jest-dom": "link:../node_modules/@testing-library/jest-dom",
     "@testing-library/react": "link:../node_modules/@testing-library/react",
     "@testing-library/user-event": "link:../node_modules/@testing-library/user-event",

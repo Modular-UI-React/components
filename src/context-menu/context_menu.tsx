@@ -1,5 +1,4 @@
 import React, { useRef, MutableRefObject } from 'react'
-import PropTypes from 'prop-types'
 import Tippy from '@tippyjs/react'
 import { parseArray, concatClassNames } from '@modular-ui-react/utils'
 import { MdArrowForwardIos } from 'react-icons/md'
@@ -16,13 +15,15 @@ export const MenuItem = ({
 }: MenuItemPropTypes): JSX.Element => {
   const ref: MutableRefObject<HTMLElement> = useRef()
 
-  children = parseArray(children)
+  const childrenArray = parseArray(children)
 
   props.lifecycle = useLifecycle(props.lifecycle)
   props.lifecycle.onInit = ref
 
-  if (children.length > 1) {
-    const menus = <ContextMenu className=''>{children.slice(1)}</ContextMenu>
+  if (childrenArray.length > 1) {
+    const menus = (
+      <ContextMenu className=''>{childrenArray.slice(1)}</ContextMenu>
+    )
 
     return (
       <React.Fragment>
@@ -53,11 +54,7 @@ export const MenuItem = ({
 }
 
 MenuItem.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
-  className: PropTypes.string
+  ...Component.propTypes
 }
 
 export interface ContextMenuPropTypes extends ComponentPropTypes {}
@@ -78,9 +75,5 @@ export const ContextMenu = ({
 }
 
 ContextMenu.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
-  className: PropTypes.string
+  ...Component.propTypes
 }

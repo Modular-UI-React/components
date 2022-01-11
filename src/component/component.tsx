@@ -36,9 +36,7 @@ const execCallback = (
   }
 }
 
-export interface ComponentPropTypes {
-  children?: string | JSX.Element | JSX.Element[]
-  className?: string
+export interface ComponentPropTypes extends React.HTMLProps<HTMLDivElement> {
   style?: object
   options?: { contextMenu?: JSX.Element; contextMenuShow?: boolean }
   lifecycle?: {
@@ -150,6 +148,7 @@ export const Component = ({
         contextMenuVisibility &&
         React.cloneElement(contextMenu, {
           style: {
+            ...contextMenu.props.style,
             position: 'absolute',
             left: anchorXY.current[0],
             top: anchorXY.current[1]
@@ -167,10 +166,7 @@ export const Component = ({
 }
 
 Component.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
+  children: PropTypes.node,
   className: PropTypes.string,
   style: PropTypes.object,
   options: PropTypes.shape({
@@ -180,7 +176,7 @@ Component.propTypes = {
   lifecycle: PropTypes.shape({
     onInit: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
     onMount: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
-    onRender: PropTypes.func,
-    onStyleChange: PropTypes.func
+    onRender: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
+    onStyleChange: PropTypes.oneOfType([PropTypes.func, PropTypes.object])
   })
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { ContextMenu, MenuItem } from '../../../src/context-menu/context_menu'
+import { ContextMenu, MenuItem } from '@modular-ui-react/components'
 
 const story: ComponentMeta<typeof ContextMenu> = {
   title: 'ContextMenu',
@@ -39,6 +39,7 @@ Default.args = {
     <MenuItem key='4'>Menu 4</MenuItem>
   ],
   style: {
-    backgroundColor: 'skyblue'
+    backgroundColor: 'skyblue',
+    width: 'max-content'
   }
 }
