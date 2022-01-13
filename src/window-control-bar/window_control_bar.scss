@@ -1,0 +1,43 @@
+.WindowControlBar {
+  background-color: #f0f0f0;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+  & .ToggleButton {
+    background-color: #808080;
+    box-shadow: #404040 1px 1px 1px 2px;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12px;
+    width: 12px;
+    padding: 2px;
+    margin: 3px 5px 5px 3px;
+
+    &:hover {
+      background-color: #909090;
+    }
+
+    &:active {
+      background-color: #c0c0c0;
+      box-shadow: #404040 0px 0px 1px 1px;
+      margin: 4px 4px 4px 4px;
+    }
+  }
+
+  & > .drag-button {
+    color: white;
+  }
+
+  & > .minimize-button {
+    color: white;
+  }
+
+  & > .close-button {
+    color: rgb(200, 10, 10);
+  }
+}

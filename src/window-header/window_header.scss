@@ -1,0 +1,13 @@
+.WindowHeader {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 16px;
+
+  & > .header-title-bar {
+  }
+
+  & > .header-control-bar {
+  }
+}

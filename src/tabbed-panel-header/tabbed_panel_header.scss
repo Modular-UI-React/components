@@ -1,0 +1,18 @@
+.TabbedPanelHeader {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+
+  & > .links {
+    display: flex;
+    flex: 1 1 auto;
+
+    & > .link {
+      border: 1px solid black;
+
+      &[active] {
+        background-color: gray;
+      }
+    }
+  }
+}

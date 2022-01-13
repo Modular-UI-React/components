@@ -1,0 +1,10 @@
+.TabbedWindow {
+  & > .WindowBody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .tabbed-panel {
+    flex: 1 1 auto;
+  }
+}

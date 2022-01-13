@@ -1,0 +1,22 @@
+.TabbedPanelBody {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1 1 auto;
+
+  & > .contents {
+    border: 1px solid black;
+    display: flex;
+    flex: 1 1 auto;
+
+    & > .content {
+      border: 1px solid black;
+      display: none;
+      flex: 1 1 auto;
+
+      &[active] {
+        display: block;
+      }
+    }
+  }
+}

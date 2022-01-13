@@ -17,6 +17,6 @@
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src", "example/src/stories/context_menu.stories.tsx"],
+  "include": ["src", "example/src"],
   "exclude": ["node_modules", "dist", "example"]
 }
